@@ -38,6 +38,15 @@ img {
     width: 80%;
 }
 
+.Languages{
+    font-family: 'Ubuntu Mono', monospace;
+    color: var(--para);
+}
+
+.Languages p{
+    margin: 10px;
+}
+
 ::selection {
     background: var(--highlight-color);
 }
