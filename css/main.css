@@ -32,6 +32,11 @@ a {
     cursor: pointer;
 }
 
+.DanLinks{
+    font-family: 'Ubuntu Mono', monospace;
+    color: var(--para);
+}
+
 img {
     user-select: none;
     border-radius: 3px;
