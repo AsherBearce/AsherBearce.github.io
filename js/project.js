@@ -39,7 +39,7 @@ function loadProject(projectName) {
 
     projectData['longDesc'].forEach(item => {
         // images start with http || https
-        if(/http/.test(item)) {
+        if(/http/.test(item) || item.startsWith("Screenshots")) {
             // it's an image
             projectDetails +=
             `<img src="${item}">`;
