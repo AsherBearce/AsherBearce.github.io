@@ -35,9 +35,8 @@ function loadProject(projectName) {
 
     </div>`;
 
-    let projectDetails = '';
-
-    projectData['longDesc'].forEach(item => {
+    let projectDetails = carkDown(projectData['longDesc']);
+    /*projectData['longDesc'].forEach(item => carkDown(item)/*{
         // images start with http || https
         if(/http/.test(item) || item.startsWith("Screenshots")) {
             // it's an image
@@ -47,7 +46,7 @@ function loadProject(projectName) {
             projectDetails +=
             `<p class="para">${item}</p>`;
         }
-    });
+    }*/
 
     $('.main').append(projectInfo);
     $('.project-details').append(projectDetails);
